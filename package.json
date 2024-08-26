@@ -1,0 +1,18 @@
+{
+  "name": "expressjs-journey",
+  "version": "1.0.0",
+  "description": "Welcome to my journey through Node.js and Express.js! 🚀 This document chronicles my adventures in learning these powerful technologies. From setting up basic servers to handling complex requests, follow along as I dive into the world of Node.js and Express.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --watch --env-file=.env server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
