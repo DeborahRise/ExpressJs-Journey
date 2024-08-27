@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import logger from './middleware/logger.js';
 import errorHandler from './middleware/error.js';
+import notFound from './middleware/notFound.js';
 import posts from './routes/posts.js';
 import { fileURLToPath } from 'url'
 
@@ -23,8 +24,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Routes;
 app.use('/api/posts', posts);
 
+// Notfound
+app.use(notFound)
 // error handler
 app.use(errorHandler);
+
+
 
 
 
