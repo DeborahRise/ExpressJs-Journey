@@ -12,6 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 //Body parser Middleware
+// This is responsible for reading data in the body of a post request
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -29,10 +30,14 @@ app.use(notFound)
 // error handler
 app.use(errorHandler);
 
+// Note: App.use is like the method that executes all express-framework Methods
 
 
 
 
 
 
-app.listen(PORT, () => {console.log(`Odogwu running on ${PORT}`)});
+
+app.listen(PORT, () => {
+    console.log(`Odogwu running on ${PORT}`)
+});
