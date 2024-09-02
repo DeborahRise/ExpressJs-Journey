@@ -1,5 +1,7 @@
 import express, { json } from 'express';
-import { DELETEPost, GETPost, GETPosts, POSTPost, PUTPost } from '../controllers/postController.js';
+import { 
+    DELETEPost, GETPost, GETPosts, POSTPost, PUTPost
+} from '../controllers/postController.js';
 
 const router = express.Router();
 
